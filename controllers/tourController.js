@@ -83,7 +83,7 @@ exports.getAllTours = async (req,res)=>{
   const tours = await features.query;
 
   
-  // const tours = await Tour.find().where('duration').equals(5).where('difficulty').equals('easy')
+  // const tours = await Tour.find().where('duration').equals(5).where('difficulty').equals('easy') query
   res.status(200).json({
     status:'success',
     results: tours.length,
